@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milimo Mukkuli - Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <meta name="description" content="Portfolio of Milimo Mukkuli, Computer Science student and developer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <canvas id="torchCanvas"></canvas>
+
+    <!-- Fixed Contact Section -->
+    <div class="fixed-contact-section" id="fixedContact">
+        <div class="fixed-contact-photo">
+            <div class="photo-placeholder"></div>
+        </div>
+        <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="fixed-contact-link">
+            my resume
+        </a>
+        <a href="mailto:mr.mukkuli@gmail.com" class="fixed-contact-link">
+            mr.mukkuli@gmail.com
+        </a>
+        <div class="fixed-contact-icons">
+            <a href="tel:+260 953 150 358" aria-label="Phone">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://wa.me/0953150358" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z">
+                    </path>
+                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="hidden-objects" aria-hidden="true">
+        <svg class="hidden-object" style="left: 10%; bottom: 15%;" width="80" height="80" viewBox="0 0 80 80">
+            <text x="40" y="50" font-size="60" text-anchor="middle" fill="currentColor">&lt;/&gt;</text>
+        </svg>
+        <svg class="hidden-object" style="left: 25%; bottom: 8%;" width="60" height="60" viewBox="0 0 60 60">
+            <circle cx="30" cy="30" r="25" stroke="currentColor" stroke-width="2" fill="none" />
+            <circle cx="30" cy="30" r="15" stroke="currentColor" stroke-width="2" fill="none" />
+        </svg>
+        <svg class="hidden-object" style="left: 45%; bottom: 12%;" width="70" height="70" viewBox="0 0 70 70">
+            <text x="35" y="50" font-size="50" text-anchor="middle" fill="currentColor">{}</text>
+        </svg>
+        <svg class="hidden-object" style="left: 65%; bottom: 10%;" width="65" height="65" viewBox="0 0 65 65">
+            <polygon points="32.5,5 60,55 5,55" stroke="currentColor" stroke-width="2" fill="none" />
+        </svg>
+        <svg class="hidden-object" style="left: 80%; bottom: 14%;" width="75" height="75" viewBox="0 0 75 75">
+            <rect x="15" y="15" width="45" height="45" stroke="currentColor" stroke-width="2" fill="none"
+                transform="rotate(45 37.5 37.5)" />
+        </svg>
+        <svg class="hidden-object" style="left: 35%; bottom: 5%;" width="55" height="55" viewBox="0 0 55 55">
+            <path d="M 27.5 10 L 27.5 45 M 10 27.5 L 45 27.5" stroke="currentColor" stroke-width="3" />
+        </svg>
+        <svg class="hidden-object" style="left: 55%; bottom: 7%;" width="68" height="68" viewBox="0 0 68 68">
+            <circle cx="34" cy="34" r="20" stroke="currentColor" stroke-width="2" fill="none" />
+            <line x1="34" y1="14" x2="34" y2="24" stroke="currentColor" stroke-width="2" />
+            <line x1="34" y1="44" x2="34" y2="54" stroke="currentColor" stroke-width="2" />
+        </svg>
+        <svg class="hidden-object" style="left: 90%; bottom: 9%;" width="62" height="62" viewBox="0 0 62 62">
+            <polygon points="31,10 50,50 12,50" stroke="currentColor" stroke-width="2" fill="none" />
+            <circle cx="31" cy="35" r="8" stroke="currentColor" stroke-width="2" fill="none" />
+        </svg>
+    </div>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="section hero-section" id="home" data-testid="section-home">
+            <div class="hero-content">
+                <h1 class="hero-title" data-testid="text-hero-title">
+                    Hi, I'm <span class="highlight">Milimo</span>
+                </h1>
+                <p class="hero-subtitle" data-testid="text-hero-subtitle">
+                    I build digital experiences that matter
+                </p>
+                <p class="hero-description" data-testid="text-hero-description">
+                    A passionate Computer Science student crafting innovative solutions through code, design, and
+                    creativity.
+                </p>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+                <p>Scroll</p>
+            </div>
+        </section>
+
+        <!-- Work Section - Now comes BEFORE About -->
+        <section class="section work-section" id="work" data-testid="section-work">
+            <div class="container-narrow">
+                <h2 class="section-title" data-testid="text-work-title">Featured Projects</h2>
+
+                <div class="projects-list">
+                    <article class="project-item" data-testid="project-item-1">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="assets/images/project1-static.png" alt="Invoice Generator"
+                                    class="static-image" data-testid="img-project-1">
+                                <img src="assets/images/project1-animated.gif" alt="Invoice Generator Demo"
+                                    class="animated-image">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-overline">Featured Project</p>
+                            <h3 class="project-title">Invoice Generator</h3>
+                            <div class="project-description-card">
+                                <p>A full-stack invoice and reciept generator solution with real-time item management.
+                                    Built for optimal performance and user experience.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>HTML</li>
+                                <li>JavaScript</li>
+                                <li>CSS</li>
+                                <li>Python</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/mr-mukkuli/invoiceGenerator" target="_blank"
+                                    rel="noopener noreferrer" aria-label="GitHub Repository"
+                                    data-testid="link-github-1">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://mr-mukkuli.github.io/invoiceGenerator/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Live Demo" data-testid="link-demo-1">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item reverse" data-testid="project-item-2">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="assets/images/project2-static.png" alt="Yamba Media Website"
+                                    class="static-image" data-testid="img-project-2">
+                                <img src="assets/images/project2-animated.gif" alt="Yamba Media Website"
+                                    class="animated-image">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-overline">Featured Project</p>
+                            <h3 class="project-title">Yambe Media Website</h3>
+                            <div class="project-description-card">
+                                <p>A website portfolio for Yamba Media, a creative agency, showcasing their services. It
+                                    features a responsive design, interactive pricing calculator, and a
+                                    dynamic project gallery to attract and engage potential clients.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>Vanilla JavaScript</li>
+                                <li>Netlify</li>
+                                <li>Formspree</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/mr-mukkuli/yambamedia" target="_blank"
+                                    rel="noopener noreferrer" aria-label="GitHub Repository"
+                                    data-testid="link-github-2">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://yambamedia.netlify.app/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Live Demo" data-testid="link-demo-2">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item" data-testid="project-item-3">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="assets/images/project3-static.png" alt="Analytics Dashboard"
+                                    class="static-image" data-testid="img-project-3">
+                                <img src="assets/images/project3-animated.gif" alt="Analytics Dashboard Demo"
+                                    class="animated-image">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-overline">Featured Project</p>
+                            <h3 class="project-title">Analytics Dashboard</h3>
+                            <div class="project-description-card">
+                                <p>Data visualization dashboard with interactive charts and real-time metrics tracking.
+                                    Empowering data-driven decision making with beautiful visualizations.</p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>React</li>
+                                <li>D3.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub Repository" data-testid="link-github-3">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Live Demo" data-testid="link-demo-3">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section - Now comes AFTER Featured Projects -->
+        <section class="section about-section" id="about" data-testid="section-about">
+            <div class="container">
+                <h2 class="section-title" data-testid="text-about-title">About Me</h2>
+                <div class="about-content">
+                    <p class="large-text">
+                        I'm a Computer Science student with a passion for creating meaningful digital experiences.
+                    </p>
+                    <p>
+                        My journey in technology began with curiosity and evolved into a dedication to building
+                        solutions that solve real-world problems. I love exploring the intersection of design
+                        and development, where aesthetics meet functionality.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me contributing to open-source projects, learning about
+                        emerging technologies, or working on personal experiments that push my creative boundaries.
+                    </p>
+
+                    <div class="skills-section">
+                        <h3>Skills & Technologies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Languages</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Frontend</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Vue.js</span>
+                                    <span class="skill-tag">TailwindCSS</span>
+                                    <span class="skill-tag">Next.js</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Backend & Tools</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Express</span>
+                                    <span class="skill-tag">PostgreSQL</span>
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact" data-testid="section-contact">
+            <div class="container-narrow">
+                <h2 class="section-title centered" data-testid="text-contact-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-text">
+                        I'm currently looking for new opportunities and my inbox is always open.
+                        Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+
+                    <div class="contact-info-section">
+                        <div class="contact-info-photo">
+                            <div class="photo-placeholder-large"></div>
+                        </div>
+                        <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer"
+                            class="contact-info-link">
+                            Resume
+                        </a>
+                        <a href="mailto:milimo@example.com" class="contact-info-link">
+                            mr.mukkuli@gmail.com
+                        </a>
+                        <div class="contact-info-icons">
+                            <a href="tel:+260 953 150 358" aria-label="Phone">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/0953150358" target="_blank" rel="noopener noreferrer"
+                                aria-label="WhatsApp">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="YouTube">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z">
+                                    </path>
+                                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer-credit">Designed & Built by Milimo Mukkuli</p>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
