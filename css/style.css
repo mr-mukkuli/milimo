@@ -316,7 +316,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* ==================== PROJECTS SECTION ==================== */
+/* ==================== PROJECTS SECTION - IMPROVED IMAGES ==================== */
 .work-section {
     align-items: center;
     text-align: center;
@@ -337,22 +337,29 @@ body {
 }
 
 .project-image {
-    grid-column: 1 / 8;
+    grid-column: 1 / 9;
     grid-row: 1;
     position: relative;
     z-index: 1;
 }
 
 .project-item.reverse .project-image {
-    grid-column: 6 / -1;
+    grid-column: 5 / -1;
 }
 
 .project-image-wrapper {
     position: relative;
-    border-radius: 4px;
+    border-radius: 6px;
     overflow: hidden;
     background: var(--color-bg-light);
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 10px 40px -15px rgba(0, 0, 0, 0.5);
+    transition: var(--transition-smooth);
+}
+
+.project-image-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px -15px rgba(212, 165, 116, 0.3);
 }
 
 .project-image-wrapper::after {
@@ -362,9 +369,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(212, 165, 116, 0.08);
+    background: rgba(212, 165, 116, 0.1);
     transition: var(--transition-smooth);
     pointer-events: none;
+    mix-blend-mode: multiply;
 }
 
 .project-item:hover .project-image-wrapper::after {
@@ -375,7 +383,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
     transition: var(--transition-smooth);
+    filter: grayscale(0.3) contrast(1.1);
+}
+
+.project-item:hover .project-image-wrapper img {
+    filter: grayscale(0) contrast(1);
 }
 
 .static-image {
@@ -398,7 +412,7 @@ body {
 }
 
 .project-content {
-    grid-column: 7 / -1;
+    grid-column: 8 / -1;
     grid-row: 1;
     position: relative;
     z-index: 2;
@@ -406,7 +420,7 @@ body {
 }
 
 .project-item.reverse .project-content {
-    grid-column: 1 / 8;
+    grid-column: 1 / 7;
     text-align: left;
 }
 
@@ -557,7 +571,7 @@ body {
     font-size: 0.875rem;
     letter-spacing: 0.1em;
     transition: var(--transition-fast);
-    padding: -15px 0;
+    padding: 15px 0;
 }
 
 .contact-info-link:hover {
@@ -582,7 +596,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* ==================== FIXED CONTACT SECTION - BOTTOM RIGHT (Brittany Chiang Style) ==================== */
+/* ==================== FIXED CONTACT SECTION - BOTTOM RIGHT ==================== */
 .fixed-contact-section {
     position: fixed;
     bottom: 50px;
@@ -694,7 +708,7 @@ body {
     font-family: 'Courier New', monospace;
 }
 
-/* ==================== MOBILE RESPONSIVENESS ==================== */
+/* ==================== MOBILE RESPONSIVENESS - ENHANCED ==================== */
 @media (max-width: 1024px) {
     .fixed-contact-section {
         right: 16px;
@@ -711,6 +725,12 @@ body {
     .project-item.reverse .project-image {
         grid-column: 1 / -1;
         width: 100%;
+        min-height: 320px;
+    }
+
+    .project-image-wrapper {
+        aspect-ratio: 16 / 11;
+        min-height: 320px;
     }
 
     .project-content,
@@ -721,9 +741,9 @@ body {
     }
 
     .project-description-card {
-        background: transparent;
-        box-shadow: none;
-        padding: 0;
+        background: var(--color-bg-light);
+        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        padding: 20px;
         margin-top: 16px;
     }
 
@@ -751,6 +771,12 @@ body {
         padding: 0 16px;
         min-height: auto;
         scroll-snap-align: none;
+        opacity: 1 !important;
+    }
+
+    .work-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .fixed-contact-section {
@@ -798,8 +824,66 @@ body {
         gap: 24px;
     }
 
+    .project-item,
+    .project-item.reverse {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .project-image,
+    .project-item.reverse .project-image {
+        grid-column: 1 / -1;
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .project-image-wrapper {
+        aspect-ratio: 16 / 11;
+        min-height: 300px;
+        border-radius: 8px;
+        box-shadow: 0 15px 50px -15px rgba(212, 165, 116, 0.2);
+    }
+
+    .project-image-wrapper:hover {
+        transform: none;
+    }
+
+    .project-image-wrapper img {
+        object-position: center top;
+        filter: grayscale(0) contrast(1);
+    }
+
+    .project-content,
+    .project-item.reverse .project-content {
+        grid-column: 1 / -1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .project-description-card {
+        background: rgba(26, 26, 26, 0.6);
+        box-shadow: none;
+        padding: 20px;
+        margin-top: 16px;
+        backdrop-filter: blur(10px);
+    }
+
+    .project-tech-list,
+    .project-item.reverse .project-tech-list {
+        justify-content: center;
+    }
+
+    .project-links,
+    .project-item.reverse .project-links {
+        justify-content: center;
+    }
+
     .projects-list {
-        gap: 60px;
+        gap: 70px;
     }
 
     .project-title {
@@ -831,6 +915,19 @@ body {
 
     .fixed-contact-section {
         right: 12px;
+    }
+
+    .project-image-wrapper {
+        min-height: 300px;
+    }
+
+    .project-image,
+    .project-item.reverse .project-image {
+        min-height: 300px;
+    }
+
+    .section {
+        padding: 0 12px;
     }
 }
 
