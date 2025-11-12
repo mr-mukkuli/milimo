@@ -838,12 +838,12 @@ body {
     .project-item.reverse .project-image {
         grid-column: 1 / -1;
         width: 100%;
-        min-height: 300px;
+        min-height: auto;
     }
 
     .project-image-wrapper {
         aspect-ratio: 16 / 9;
-        min-height: auto;
+        min-height: unset;
         max-width: 100%;
         width: 100%;
         border-radius: 8px;
@@ -920,12 +920,13 @@ body {
     }
 
     .project-image-wrapper {
-        min-height: 300px;
+        min-height: unset;
+        aspect-ratio: 16 / 9;
     }
 
     .project-image,
     .project-item.reverse .project-image {
-        min-height: 300px;
+        min-height: auto;
     }
 
     .section {
