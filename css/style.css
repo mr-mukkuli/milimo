@@ -514,15 +514,15 @@ body {
     font-size: 1.125rem;
     color: var(--color-text-secondary);
     line-height: 1.7;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
 }
 
 .contact-info-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    margin-top: 48px;
+    gap: 12px;
+    margin-bottom: 15px;
 }
 
 .contact-info-photo {
@@ -571,7 +571,7 @@ body {
     font-size: 0.875rem;
     letter-spacing: 0.1em;
     transition: var(--transition-fast);
-    padding: 15px 0;
+    padding: 1px 0;
 }
 
 .contact-info-link:hover {
