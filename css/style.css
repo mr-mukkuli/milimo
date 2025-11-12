@@ -729,7 +729,7 @@ body {
     }
 
     .project-image-wrapper {
-        aspect-ratio: 16 / 11;
+        aspect-ratio: 16 / 9;
         min-height: 320px;
     }
 
@@ -842,8 +842,10 @@ body {
     }
 
     .project-image-wrapper {
-        aspect-ratio: 16 / 11;
-        min-height: 300px;
+        aspect-ratio: 16 / 9;
+        min-height: auto;
+        max-width: 100%;
+        width: 100%;
         border-radius: 8px;
         box-shadow: 0 15px 50px -15px rgba(212, 165, 116, 0.2);
     }
