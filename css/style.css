@@ -1,4 +1,3 @@
-/* ==================== RESET & VARIABLES ==================== */
 :root {
     --color-bg: #0d0d0d;
     --color-bg-light: #1a1a1a;
@@ -46,7 +45,6 @@ body {
     color: var(--color-accent);
 }
 
-/* ==================== CURSOR TORCH EFFECT ==================== */
 #torchCanvas {
     position: fixed;
     top: 0;
@@ -74,7 +72,6 @@ body {
     transition: opacity 0.8s ease;
 }
 
-/* ==================== LAYOUT ==================== */
 .main-content {
     width: 100%;
     min-height: 100vh;
@@ -105,7 +102,6 @@ body {
     padding: 60px 0;
 }
 
-/* ==================== HERO SECTION ==================== */
 .hero-section {
     flex-direction: column;
     text-align: center;
@@ -217,7 +213,6 @@ body {
     }
 }
 
-/* ==================== SECTION TITLES ==================== */
 .section-title {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 600;
@@ -249,7 +244,6 @@ body {
     transform: translateX(-50%);
 }
 
-/* ==================== ABOUT SECTION ==================== */
 .about-section {
     align-items: center;
     text-align: center;
@@ -316,7 +310,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ==================== PROJECTS SECTION - IMPROVED IMAGES ==================== */
 .work-section {
     align-items: center;
     text-align: center;
@@ -500,7 +493,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ==================== CONTACT SECTION ==================== */
 .contact-section {
     text-align: center;
 }
@@ -596,7 +588,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* ==================== FIXED CONTACT SECTION - BOTTOM RIGHT ==================== */
 .fixed-contact-section {
     position: fixed;
     bottom: 50px;
@@ -696,7 +687,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* ==================== FOOTER ==================== */
 .footer {
     padding: 48px 24px;
     text-align: center;
@@ -708,7 +698,6 @@ body {
     font-family: 'Courier New', monospace;
 }
 
-/* ==================== MOBILE RESPONSIVENESS - ENHANCED ==================== */
 @media (max-width: 1024px) {
     .fixed-contact-section {
         right: 16px;
@@ -934,7 +923,6 @@ body {
     }
 }
 
-/* ==================== ANIMATIONS ==================== */
 @keyframes fadeIn {
     from {
         opacity: 0;

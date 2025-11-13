@@ -1,10 +1,8 @@
-// ==================== MOBILE DETECTION ====================
 const isMobile = () => {
-    return window.innerWidth <= 768 || 
-           /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    return window.innerWidth <= 768 ||
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 };
 
-// ==================== CURSOR TORCH EFFECT ====================
 class TorchEffect {
     constructor() {
         this.canvas = document.getElementById('torchCanvas');
@@ -87,7 +85,6 @@ if (!isMobile()) {
     new TorchEffect();
 }
 
-// ==================== SMOOTH SCROLL ====================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -101,7 +98,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ==================== SNAP SCROLL WITH FADE IN/OUT ====================
 const sections = document.querySelectorAll('.section');
 
 if (isMobile()) {
@@ -131,7 +127,6 @@ if (isMobile()) {
     }
 }
 
-// ==================== FIXED CONTACT SECTION FADE OUT ON CONTACT SECTION ====================
 const fixedContact = document.getElementById('fixedContact');
 const contactSection = document.getElementById('contact');
 
@@ -151,7 +146,6 @@ if (fixedContact && contactSection) {
     contactObserver.observe(contactSection);
 }
 
-// ==================== PROJECT CARDS ANIMATION - MOBILE FRIENDLY ====================
 if (!isMobile()) {
     const projectObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -177,7 +171,6 @@ if (!isMobile()) {
     });
 }
 
-// ==================== SCROLL INDICATOR ====================
 const scrollIndicator = document.querySelector('.scroll-indicator');
 if (scrollIndicator) {
     window.addEventListener('scroll', () => {
@@ -189,7 +182,6 @@ if (scrollIndicator) {
     });
 }
 
-// ==================== LOADING ANIMATION ====================
 window.addEventListener('load', () => {
     document.body.style.opacity = '0';
     setTimeout(() => {
